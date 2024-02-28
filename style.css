@@ -293,3 +293,179 @@ select{
 .fa-heart{
     color: red;
 }
+@media only screen and (max-width: 768px) {
+    .Box1 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .L_box img {
+        width: 100%;
+    }
+
+    .R_box {
+        width: 100%;
+        padding: 5vh;
+    }
+
+    #About, #Education, #Skills, #Achieve, #Projects, #Contact {
+        margin: 20px;
+        padding: 40px;
+    }
+}
+
+/* Small screens */
+@media only screen and (max-width: 576px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        min-height: auto;
+    }
+
+    .left_nav, .right_nav {
+        margin: 1%;
+    }
+
+    .right_nav {
+        display: none;
+    }
+
+    nav {
+        padding: 2%;
+    }
+
+    nav ul li {
+        margin-right: 0;
+    }
+
+    .Box1 {
+        min-height: auto;
+    }
+
+    .L_box img {
+        width: 100%;
+    }
+
+    #Resume_button > button {
+        padding: 4% 10%;
+        margin-top: 2%;
+    }
+
+    #Resume_button {
+        margin-top: 2%;
+    }
+
+    .R_box {
+        width: 100%;
+        padding: 5%;
+    }
+
+    #About, #Education, #Skills, #Achieve, #Projects, #Contact {
+        margin: 2% 2%;
+        padding: 2%;
+    }
+
+    input, select {
+        padding: 4%;
+    }
+}
+
+/* Medium screens */
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+    .nav {
+        min-height: 9vh;
+    }
+
+    .left_nav, .right_nav {
+        margin: 1%;
+    }
+
+    .right_nav {
+        display: flex;
+    }
+
+    nav {
+        padding: 1%;
+    }
+
+    .Box1 {
+        min-height: auto;
+    }
+
+    .L_box img {
+        width: 60%;
+    }
+
+    #Resume_button > button {
+        padding: 2% 6%;
+        margin-top: 2%;
+    }
+
+    #Resume_button {
+        margin-top: 2%;
+    }
+
+    .R_box {
+        width: 60%;
+        padding: 5%;
+    }
+
+    #About, #Education, #Skills, #Achieve, #Projects, #Contact {
+        margin: 2% 2%;
+        padding: 2%;
+    }
+
+    input, select {
+        padding: 2%;
+    }
+}
+
+/* Large screens */
+@media only screen and (min-width: 993px) {
+    .nav {
+        min-height: 9vh;
+    }
+
+    .left_nav, .right_nav {
+        margin: 1%;
+    }
+
+    .right_nav {
+        display: flex;
+    }
+
+    nav {
+        padding: 1%;
+    }
+
+    .Box1 {
+        min-height: 115vh;
+    }
+
+    .L_box img {
+        width: 25%;
+    }
+
+    #Resume_button > button {
+        padding: 1% 4%;
+        margin-top: 2%;
+    }
+
+    #Resume_button {
+        margin-top: 2%;
+    }
+
+    .R_box {
+        width: 50%;
+        padding: 5%;
+    }
+
+    #About, #Education, #Skills, #Achieve, #Projects, #Contact {
+        margin: 2% 2%;
+        padding: 2%;
+    }
+
+    input, select {
+        padding: 1%;
+    }
+}
