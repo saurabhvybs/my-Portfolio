@@ -1,0 +1,386 @@
+/* General Styles */
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    color: #f8d2d2;
+}
+
+body {
+    background: linear-gradient(90deg, rgba(57, 10, 113, 1) 0%, rgba(22, 17, 65, 1) 35%, rgba(49, 5, 54, 1) 100%);
+    width: fit-content;
+}
+
+/* Navigation Styles */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(4, 4, 34);
+    color: #f8d2d2;
+    min-height: 9vh;
+    margin-right: 25px;
+    align-items: center;
+}
+
+.left_nav {
+    font-size: 1.8rem;
+    color: rgb(238, 227, 248);
+    margin-left: 20px;
+}
+
+.right_nav {
+    display: flex;
+    text-overflow: ellipsis;
+    font-size: 1.8rem;
+    letter-spacing: 1.4px;
+    margin-right: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.list_nav {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+nav {
+    background: #7c31f3ee;
+    border-radius: 19px;
+    padding: 12px;
+    box-shadow: 5px 4px 20px rgba(243, 240, 240, 0.418);
+    position: relative;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    font-size: 0.8rem;
+    cursor: pointer;
+    position: relative;
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+
+nav ul li:after {
+    content: " ";
+    width: 0;
+    height: 3px;
+    background: #e5e6e7;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+nav ul li:hover {
+    font-size: 1.01rem;
+    transition: 0.5s ease-in-out;
+}
+
+nav ul li:hover::after {
+    width: 100%;
+}
+
+/* Main Section Styles */
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    opacity: 1;
+    z-index: -1;
+}
+
+/* Box1 Styles */
+
+.Box1 {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-around;
+    padding: 2%;
+    align-items: center;
+    border-radius: 12px;
+    position: relative;
+    min-height: 115vh;
+}
+
+.L_box img {
+    width: 25vw;
+    z-index: 1;
+}
+
+#Resume_button > button {
+    padding: 4px 18px;
+    color: #fff;
+    background: #d65f28ee;
+    border-radius: 14px;
+    border: solid pink;
+}
+
+#Resume_button {
+    display: flex;
+    position: relative;
+    padding: 2vh;
+    justify-content: space-around;
+}
+
+.R_box {
+    margin: 1%;
+    padding: 14vh;
+    z-index: 1;
+    display: flex;
+    text-align: center;
+    border-radius: 14px;
+    width: 50%;
+    flex-direction: column;
+    color: #f8d2d2;
+    font-size: 3rem;
+}
+
+.R_box>section {
+    width: 40%;
+}
+
+.purple {
+    color: aquamarine;
+}
+
+#element {
+    color: rgb(238, 227, 248);
+}
+
+/* Section Styles */
+
+#About, #Education, #Skills, #Achieve, #Projects, #Contact {
+    margin-top: 120px;
+    margin-left: 20px;
+    margin-right: 5px;
+    padding: 80px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: wheat;
+    box-shadow: 13px 11px 20px rgba(243, 240, 240, 0.418);
+    border-radius: 14px;
+}
+
+/* Form Styles */
+
+input,
+select {
+    color: black;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Footer Styles */
+
+#foot {
+    width: 100vw;
+    background-color: rgb(4, 4, 34);
+    padding: 20px;
+    text-align: center;
+    color: wheat;
+}
+
+.fa-heart {
+    color: red;
+}
+
+/* Media Queries for Responsiveness */
+
+@media only screen and (max-width: 768px) {
+    .Box1 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .L_box img {
+        width: 100%;
+    }
+
+    .R_box {
+        width: 100%;
+        padding: 5vh;
+    }
+
+    #About, #Education, #Skills, #Achieve, #Projects, #Contact {
+        margin: 20px;
+        padding: 40px;
+    }
+}
+
+/* Small screens */
+@media only screen and (max-width: 576px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        min-height: auto;
+    }
+
+    .left_nav, .right_nav {
+        margin: 1%;
+    }
+
+    .right_nav {
+        display: none;
+    }
+
+    nav {
+        padding: 2%;
+    }
+
+    nav ul li {
+        margin-right: 0;
+    }
+
+    .Box1 {
+        min-height: auto;
+    }
+
+    .L_box img {
+        width: 100%;
+    }
+
+    #Resume_button > button {
+        padding: 4% 10%;
+        margin-top: 2%;
+    }
+
+    #Resume_button {
+        margin-top: 2%;
+    }
+
+    .R_box {
+        width: 100%;
+        padding: 5%;
+    }
+
+    #About, #Education, #Skills, #Achieve, #Projects, #Contact {
+        margin: 2% 2%;
+        padding: 2%;
+    }
+
+    input, select {
+        padding: 4%;
+    }
+}
+
+/* Medium screens */
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+    .nav {
+        min-height: 9vh;
+    }
+
+    .left_nav, .right_nav {
+        margin: 1%;
+    }
+
+    .right_nav {
+        display: flex;
+    }
+
+    nav {
+        padding: 1%;
+    }
+
+    .Box1 {
+        min-height: auto;
+    }
+
+    .L_box img {
+        width: 60%;
+    }
+
+    #Resume_button > button {
+        padding: 2% 6%;
+        margin-top: 2%;
+    }
+
+    #Resume_button {
+        margin-top: 2%;
+    }
+
+    .R_box {
+        width: 60%;
+        padding: 5%;
+    }
+
+    #About, #Education, #Skills, #Achieve, #Projects, #Contact {
+        margin: 2% 2%;
+        padding: 2%;
+    }
+
+    input, select {
+        padding: 2%;
+    }
+}
+
+/* Large screens */
+@media only screen and (min-width: 993px) {
+    .nav {
+        min-height: 9vh;
+    }
+
+    .left_nav, .right_nav {
+        margin: 1%;
+    }
+
+    .right_nav {
+        display: flex;
+    }
+
+    nav {
+        padding: 1%;
+    }
+
+    .Box1 {
+        min-height: 115vh;
+    }
+
+    .L_box img {
+        width: 25%;
+    }
+
+    #Resume_button > button {
+        padding: 1% 4%;
+        margin-top: 2%;
+    }
+
+    #Resume_button {
+        margin-top: 2%;
+    }
+
+    .R_box {
+        width: 50%;
+        padding: 5%;
+    }
+
+    #About, #Education, #Skills, #Achieve, #Projects, #Contact {
+        margin: 2% 2%;
+        padding: 2%;
+    }
+
+    input, select {
+        padding: 1%;
+    }
+}
