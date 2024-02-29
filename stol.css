@@ -289,11 +289,11 @@ select {
     }
 
     input, select {
-        padding: 4%;
-        border-radius: 4rem;
+        padding: 2%;
+        border-radius: 2rem;
     }
     fieldset {
-        padding: 1.5rem;
+        padding: 0.8rem;
     }
 }
 
