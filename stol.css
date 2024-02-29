@@ -6,7 +6,7 @@ html {
 
 * {
     margin: 0;
-    padding: 0;
+    padding: 0 ;
     box-sizing: border-box;
     text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
@@ -127,11 +127,12 @@ video {
 }
 
 #Resume_button > button {
-    padding: 4px 18px;
+    padding: 4px 18px !important;
     color: #fff;
-    background: #d65f28ee;
-    border-radius: 14px;
+    background: #d65f28ee !important;
+    border-radius: 14px !important;
     border: solid pink;
+
 }
 
 #Resume_button {
@@ -139,6 +140,13 @@ video {
     position: relative;
     padding: 2vh;
     justify-content: space-around;
+}
+#submit1{
+        padding: 4px 18px !important;
+        color: #fff;
+        background: #d65f28ee !important;
+        border-radius: 14px !important;
+        border: solid pink;
 }
 
 .R_box {
@@ -230,7 +238,7 @@ select {
 }
 
 /* Small screens */
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 480px) {
     .nav {
         flex-direction: column;
         align-items: center;
@@ -276,12 +284,16 @@ select {
     }
 
     #About, #Education, #Skills, #Achieve, #Projects, #Contact {
-        margin: 2% 2%;
-        padding: 2%;
+        margin: 12% 10% 12% 10%;
+        padding: 10%;
     }
 
     input, select {
         padding: 4%;
+        border-radius: 4rem;
+    }
+    fieldset {
+        padding: 1.5rem;
     }
 }
 
