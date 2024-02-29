@@ -185,7 +185,7 @@ video {
     justify-content: center;
     flex-direction: column;
     color: wheat;
-    box-shadow: 13px 11px 20px rgba(243, 240, 240, 0.418);
+    box-shadow: 1px 0px 20px 5px rgba(243, 240, 240, 0.418);
     border-radius: 14px;
 }
 
