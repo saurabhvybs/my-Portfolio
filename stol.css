@@ -293,9 +293,7 @@ select {
         padding: 2%;
         border-radius: 2rem;
     }
-    fieldset {
-        padding: auto;
-    }
+
 }
 
 /* Medium screens */
@@ -345,6 +343,9 @@ select {
 
     input, select {
         padding: 2%;
+    }
+    fieldset{
+        overflow-x: hidden;
     }
 }
 
