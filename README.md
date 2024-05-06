@@ -1,4 +1,4 @@
 THIS IS MY VERY FIRST PROJECT WITH HTML5 AND CSS.
 I TRIED TO MAKE IT RESPONSIVE.
 I USED ALL THE STUFFS I LEARNED.
-live link: https://saurabhvybs.github.io/my-Porfolio/
+live link: https://saurabhvybs.github.io/my-Portfolio/
